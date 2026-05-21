@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Physical Form</title>
+<style>
+    body {
+        font-family: "Times New Roman", Times, serif; 
+        margin: 40px;
+        color: #000;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+    
+    
+    legend {
+        font-size: 1.4em;
+        padding: 0 10px;
+    }
+    
+    ul {
+        list-style-type: disc;
+        margin: 15px 0 15px 20px;
+        padding: 0;
+    }
+    
+    li {
+        margin-bottom: 12px;
+        font-size: 1.2em;
+        display: flex;
+        align-items: flex-end; /* Aligns the label text with the bottom of the input */
+    }
+    
+    label {
+        margin-right: 8px;
+        white-space: nowrap;
+    }
+    
+    input[type="text"], input[type="tel"] {
+        border: none;
+        border-bottom: 2px dotted #000;
+        outline: none;
+        width: 400px; /* Adjusts the length of the dotted line */
+        font-size: 0.9em;
+        font-family: Arial, sans-serif;
+        color: #555;
+        background: transparent;
+        padding: 0 0 2px 5px;
+    }
+    
+    /* Styles the placeholder text to look like the gray text in the image */
+    ::placeholder {
+        color: #888;
+        opacity: 1; 
+    }
+</style>
+</head>
+<body>
+
+    <h1>Sports Physical Form</h1>
+
+    <fieldset>
+        <legend>Athlete Information</legend>
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your fullName..">
+            </li>
+            <li>
+                <label for="school">School/Team:</label>
+                <input type="text" id="school" placeholder="Team Name...">
+            </li>
+            <li>
+                <label for="sports">Sports:</label>
+                <input type="text" id="sports" placeholder="Team Name...">
+            </li>
+            <li>
+                <label for="guardian">Parent/Guardian Name:</label>
+                <input type="text" id="guardian" placeholder="parent/guardian..">
+            </li>
+            <li>
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" placeholder="+91 52525252">
+            </li>
+        </ul>
+    </fieldset>
+
+</body>
+</html>
