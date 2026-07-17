@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        /* color-scheme: light dark; */
+        /* background-color: antiquewhite; */
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+      .template {
+        margin: 10px;
+        padding: 60px;
+        border-radius: 15%;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      input,
+      button { 
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="template">
+      <h1>Turn Your Name into Username</h1>
+      <input type="text" placeholder="First name" id="firstName" />
+      <input type="text" placeholder="Last Name" id="lastName" />
+      <p id="result"></p>
+      <button onclick="getUserName()">Generate Username</button>
+    </div>
+    <script>
+      const firstName = document.getElementById("firstName");
+      const lastName = document.getElementById("lastName");
+      const result = document.getElementById("result");
+
+      function getUserName() {
+        const first = firstName.value.trim().toLowerCase();
+        const last = lastName.value.trim().toLowerCase();
+        const num = parseInt(Math.random() * 10000);
+
+        result.textContent = `${first}${last}${num}`;
+      }
+      //   result.innerHTML = getUserName();
+    </script>
+  </body>
+</html>
