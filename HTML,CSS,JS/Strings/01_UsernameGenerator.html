@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>User Name Generator</title>
     <style>
       * {
         box-sizing: border-box;
@@ -33,7 +33,7 @@
         justify-content: center;
       }
       input,
-      button { 
+      button {
         margin: 10px;
         padding: 10px;
       }
@@ -48,16 +48,21 @@
       <button onclick="getUserName()">Generate Username</button>
     </div>
     <script>
-      const firstName = document.getElementById("firstName");
-      const lastName = document.getElementById("lastName");
       const result = document.getElementById("result");
 
       function getUserName() {
-        const first = firstName.value.trim().toLowerCase();
-        const last = lastName.value.trim().toLowerCase();
+        const firstName = document
+          .getElementById("firstName")
+          .value.trim()
+          .toLowerCase();
+        const lastName = document
+          .getElementById("lastName")
+          .value.trim()
+          .toLowerCase();
+
         const num = parseInt(Math.random() * 10000);
 
-        result.textContent = `${first}${last}${num}`;
+        result.textContent = `${firstName}${lastName}${num}`;
       }
       //   result.innerHTML = getUserName();
     </script>
