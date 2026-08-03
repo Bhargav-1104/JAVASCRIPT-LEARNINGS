@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Checker</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body,
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+      button,
+      input,
+      h1 {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Get your Email ID validated!!!</h1>
+    <input type="email" name="" id="emailID" placeholder="Enter Your Email" />
+    <p id="result"></p>
+    <button onclick="emailValidater()">Check</button>
+    <script>
+      const ans = document.getElementById("result");
+      const email = document.getElementById("emailID");
+      function emailValidater() {
+        const mail = email.value.trim();
+        if (
+          !mail.includes("@gmail") ||
+          !mail.includes(".com") ||
+          mail.includes(" ")
+        ) {
+          ans.textContent = "INVALID EMAIL";
+        } else {
+          ans.textContent = "VALID EMAIL";
+        }
+      }
+    </script>
+  </body>
+</html>
