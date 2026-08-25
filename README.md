@@ -55,3 +55,29 @@ WEB-DEV/
 │   └── Developer_Utilities/
 │
 └── README.md
+## Learning Progress
+
+| Area | Status |
+|---|---|
+| HTML | 🟡 Learning |
+| CSS | 🟡 Learning |
+| JavaScript Fundamentals | 🟡 Learning |
+| DOM Manipulation | 🟡 Learning |
+| Responsive Design | 🟡 Learning |
+| JavaScript Projects | 🟡 Learning |
+
+## Goals
+
+My current goals are to:
+
+- Strengthen JavaScript fundamentals
+- Build more interactive projects
+- Improve problem-solving skills
+- Learn modern web-development practices
+- Build projects without relying heavily on tutorials
+- Apply what I learn to real-world projects
+
+## Future Plans
+
+This repository will continue to evolve as I learn new concepts,
+build projects, and improve existing implementations.
