@@ -45,3 +45,13 @@ and experimenting with them rather than only studying theory.
 - [ ] Build small JavaScript projects
 - [ ] Build interactive web pages
 - [ ] Practice DOM-based applications
+
+## Repository Structure
+
+```text
+WEB-DEV/
+│
+├── HTML,CSS,JS/
+│   └── Developer_Utilities/
+│
+└── README.md
